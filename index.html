@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EcoQuiz ♻️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <!-- Pantalla de inicio -->
+
+        <section id="inicio">
+
+            <div class="logo">♻️</div>
+
+            <h1>EcoQuiz</h1>
+
+            <h2>¡Aprende jugando!</h2>
+
+            <p>
+                Pon a prueba tus conocimientos
+                sobre el reciclaje electrónico.
+            </p>
+
+            <button id="botonComenzar">
+                🎮 Comenzar
+            </button>
+
+        </section>
+
+
+        <!-- Juego -->
+
+        <section id="juego" class="oculto">
+
+            <div class="barra-superior">
+
+                <span>
+                    ⭐ Puntos:
+                    <strong id="puntos">0</strong>
+                </span>
+
+                <span>
+                    ❓ Pregunta:
+                    <strong id="numeroPregunta">1</strong>/10
+                </span>
+
+            </div>
+
+
+            <div class="pregunta">
+
+                <div id="emojiPregunta">
+                    📱
+                </div>
+
+                <h2 id="textoPregunta">
+                    Pregunta
+                </h2>
+
+            </div>
+
+
+            <div id="respuestas">
+
+                <!-- Las respuestas aparecerán aquí -->
+
+            </div>
+
+
+            <div id="explicacion"
+                 class="explicacion oculto">
+
+            </div>
+
+
+            <button id="siguiente"
+                    class="oculto">
+
+                ➡️ Siguiente
+
+            </button>
+
+        </section>
+
+
+        <!-- Pantalla final -->
+
+        <section id="final"
+                 class="oculto">
+
+            <div class="trofeo">
+                🏆
+            </div>
+
+            <h1>¡Juego terminado!</h1>
+
+            <p>
+                Tu puntuación:
+            </p>
+
+            <div id="puntuacionFinal">
+                0
+            </div>
+
+            <p id="mensajeFinal">
+                ¡Buen trabajo!
+            </p>
+
+            <button id="jugarNuevamente">
+                🔄 Jugar nuevamente
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
